@@ -1,0 +1,13 @@
+address: 0.0.0.0:23333
+
+tunnel: localhost:7890
+
+upstream:
+  - host: github.localhost
+    target: github.com
+    uri: /
+
+  - host: google.localhost
+    target: google.com 
+    uri: /
+    
